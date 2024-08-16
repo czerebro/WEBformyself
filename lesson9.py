@@ -44,5 +44,6 @@ print(s6[:5])               # Hello
 print(s6[6:])               # world!
 print(s6[::])               # Hello world!
 print(s6[::2])              # Hlowrd
-print(s6[::-1])             #!dlrow olleH
+print(s6[::-1])             # !dlrow olleH
 print(s6[:5] + s6[6:])      # Helloworld!
+print(s6[0] + 'b' + s6[5:]) # Hb world!
