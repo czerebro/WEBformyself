@@ -44,3 +44,6 @@ for l in 'Hello':
     print(f"'{l}'", end=' ')
 else:
     print('No spaces')
+
+for l in 'Hello':
+    pass                            # Ничего не произойдёт
