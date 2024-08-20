@@ -44,3 +44,9 @@ for l in 'Hello':
     print(f"'{l}'", end=' ')
 else:
     print('No spaces')
+
+# Вложенные циклы
+for i in range(1, 3):
+    print(f'внешний цикл #{i}')
+    for j in range(1, 3):
+        print(f'\tвнутренний цикл #{j}')
