@@ -66,3 +66,16 @@ print(l)
 # list.clear() - Очищает список
 l.clear()
 print(l)
+
+# str.join() - Возвращает строку из элементов списка через разделитель str
+str_list = list('Hello')
+print(str_list)                             # ['H', 'e', 'l', 'l', 'o']
+s = '-'.join(str_list)
+print(s)                                    # H-e-l-l-o
+
+# join применим только к строке. c int можно работать через функцию map()
+# map() позволяет применять функцию к каждому элементу последовательности
+int_list = list(range(1, 10))
+print(int_list)                             # [1, 2, 3, 4, 5, 6, 7, 8, 9]
+s = '-'.join(map(str, int_list))
+print(s)                                    # 1-2-3-4-5-6-7-8-9
