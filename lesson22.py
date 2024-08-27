@@ -65,6 +65,10 @@ if 'apple' in s:
 else:
     print('None')
 
+# Доступ к множествам
+for i in s:
+    print(i)
+
 # Frozenset - неизменяемый тип данных
 a = frozenset('hello')
 print(a)
