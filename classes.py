@@ -39,3 +39,24 @@ class Employee(Person):
 
     def more_info(self):
         print(f'{self.name} works in {self.company}')
+
+# Полиморфизм
+
+class Pupil(Person):
+
+    def __init__(self, name, age, school):
+        super().__init__(name, age)
+        # super(Pupil, self).__init__(name, age)
+        self.school = school
+
+    def more_info(self):
+        print(f'{self.name} study in № {self.school}')
+
+    def print_info(self):
+        super().print_info()
+        print(f'School № {self.school}')
+
+    def __str__(self):
+        # return f'Name: {self.name}'
+        # Выдаст название класса из которого он вызван
+        return f'Class: {self.__class__.__name__}'
