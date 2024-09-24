@@ -1,12 +1,12 @@
 # Классы для подключения в урок 37
 
 class Person:
-    def __init__(self, name):
+    def __init__(self, name, age):
         self.name = name
         # защищенное свойство но доступное по имени
-        self._age = 20
+        self._age = age
         # защищенное свойство. выдаст ошибку при прямом обращении
-        self.__age2 = 30
+        self.__age2 = age
 
     def get_age(self):
         return self.__age2
@@ -32,3 +32,10 @@ class Person:
 
     def print_info(self):
         print(f'Name: {self.name}. Age: {self._age}. Age2: {self.__age2}')
+
+# Наследование
+class Employee(Person):
+    company = 'Google'
+
+    def more_info(self):
+        print(f'{self.name} works in {self.company}')
